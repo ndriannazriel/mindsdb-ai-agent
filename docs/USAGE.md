@@ -47,8 +47,8 @@ SELECT response FROM mindsdb.my_ai_agent WHERE question = 'Tell me about MindsDB
 
 ### Tips for Effective Querying
 
---Be Specific: The more specific your question, the better the agent can utilize its tools to find relevant information.
---Context is Key: If your question relates to structured data, mentioning relevant IDs or keywords from that data source can help.
---Experiment: Try different phrasings and combinations of questions to understand how your agent processes information.
---Check MindsDB Logs: If you're not getting expected results, check the MindsDB logs for insights into how the agent is interpreting your query and which tools it's attempting to use.
+* Be Specific: The more specific your question, the better the agent can utilize its tools to find relevant information.
+* Context is Key: If your question relates to structured data, mentioning relevant IDs or keywords from that data source can help.
+* Experiment: Try different phrasings and combinations of questions to understand how your agent processes information.
+* Check MindsDB Logs: If you're not getting expected results, check the MindsDB logs for insights into how the agent is interpreting your query and which tools it's attempting to use.
 
