@@ -23,7 +23,7 @@ USING
     model = {
         "provider" : "openai",
         "model_name" : "gpt-4o",
-        "api_key" : "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"
+        "api_key" : "apikey"
     },
     data = {
         "knowledge_bases" : ['mindsdb.environment_kb'],
