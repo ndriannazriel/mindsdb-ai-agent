@@ -2,7 +2,6 @@
 
 This file would explain the overall design and data flow.
 
-```markdown
 # Architecture Overview
 
 This document describes the high-level architecture and data flow of the AI agent built using MindsDB.
