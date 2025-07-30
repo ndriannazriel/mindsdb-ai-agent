@@ -1,3 +1,4 @@
+```
 CREATE DATABASE web_crawler
 WITH ENGINE = 'web';
 
@@ -29,3 +30,4 @@ WHERE content = 'What is staging'
 AND relevance >= 0.6;
 
 --It will rank all the results in the database based on the relevance score based on the --'content'
+```

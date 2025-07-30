@@ -40,7 +40,7 @@ docker run -p 47334:47334 -p 47335:47335 mindsdb/mindsdb
 * Query the Knowledge Base.
 
 #### Set up a structured database using a PostgreSQL connection and then combine into an AI agent for more accurate replies
-[Reference2](Reference2.md)
+[Reference2](../Reference2.md)
 * Connect to sample datasource/dataset from Mindsdb
 * For this example we'll be using the engineering dataset from MindsDB.
 * Enrich the data before passing to the LLM.
