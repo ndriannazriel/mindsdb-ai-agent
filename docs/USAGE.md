@@ -2,7 +2,6 @@
 
 This file would contain detailed examples of how to interact with the agent, including various types of queries and expected outputs.
 
-```markdown
 # Agent Usage Guide
 
 This document provides examples and best practices for interacting with your MindsDB AI agent.
@@ -17,7 +16,7 @@ Open the MindsDB GUI (`http://localhost:47334`) and use the SQL editor to send q
 
 **Basic Query:**
 
-```sql
+```
 SELECT response FROM mindsdb.my_ai_agent WHERE question = 'What is MindsDB?';
 ```
 
