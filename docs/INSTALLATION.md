@@ -32,7 +32,7 @@ docker run -p 47334:47334 -p 47335:47335 mindsdb/mindsdb
 ### 3. Follow Reference1 and Reference2
 
 #### Working with Unstructured Data
-[Reference1](Reference1.md) 
+[Reference1](../Reference1.md) 
 * Create a Database to crawl a webpage.
 * Create a new View.
 * Turn into a Knowledge Base(Vectorized data/database where it automatically chunks and embeds the different text content that comes from our data and something the AI agent can use) 
