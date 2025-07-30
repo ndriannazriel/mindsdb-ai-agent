@@ -12,6 +12,17 @@ This document provides solutions to common issues you might encounter while sett
     * Check for port conflicts: Another application might be using ports `47334` or `47335`. You can change the mapped ports in the `docker run` command (e.g., `-p 8080:47334`).
     * Check Docker logs: Run `docker logs <container_id_or_name>` to see if MindsDB is reporting any errors during startup.
 
+### Docker Desktop Not able to run
+
+* **Issue**: Unexpected WSL error due to Virtualization Conflict
+* **Cause**: The necessary Hyper-V components (which WSL2 relies on) are either disabled or being actively blocked by another virtualization software, leading to the "WSL2 is not supported with..." error.
+* **Solution**:
+    * Run: bcdedit /set hypervisorlaunchtype Auto (This sets Hyper-V to launch automatically, which is what Docker Desktop and WSL2 need).
+    * Go to "Turn Windows features on or off" (search for it in the Start Menu).
+    * Ensure that "Windows Subsystem for Linux" and "Virtual Machine Platform" are checked (enabled).
+    * Reboot your computer. This is crucial for these changes to take effect.
+    * Update WSL: After reboot, open PowerShell as administrator and run wsl --update.
+
 ### `mindsdb_client` Connection Issues in Python
 
 * **Issue**: Your Python script fails to connect to MindsDB, or you get `Connection refused` errors.

@@ -30,14 +30,7 @@ Get the AI agent up and running in a few simple steps:
     docker pull mindsdb/mindsdb
     docker run -p 47334:47334 -p 47335:47335 mindsdb/mindsdb
     ```
-3.  **Configure API Key**: Create a `.env` file in the project root with `OPENAI_API_KEY='YOUR_OPENAI_API_KEY'`.
-4.  **Execute Setup SQL**: Run the SQL scripts in the `mindsdb_queries/` directory in order (e.g., `setup_mindsdb_model.sql`, `web_crawler_integration.sql`, etc.) using the MindsDB GUI or CLI.
-5.  **Interact with Python**:
-    ```bash
-    pip install -r requirements.txt
-    python python_scripts/interact_with_agent.py
-    ```
-    Start chatting with your AI agent!
+3.  **Mindsdb**: Follow [Reference1](Reference1.md) and [Reference2](Reference2.md)
 
 For detailed setup instructions, including database connection specifics and API key management, please refer to the [INSTALLATION Guide](docs/INSTALLATION.md).
 

@@ -1,5 +1,6 @@
 --Set up a structured database
 ```
+--Sample datasource/dataset from Mindsdb
 CREATE DATABASE datasource2
 WITH ENGINE = 'postgres',
 PARAMETERS = {
@@ -11,9 +12,11 @@ PARAMETERS = {
     "schema" : "demo"
 }
 
+--A new knowledge base/table 
 CREATE TABLE files.enriched_files (
     SELECT 
     issue, environment, error_rate, impacted_customers, severity,
+    --Below is a new entry
     LLM('Determine a possible fix for this issue: ' || issue) AS possible_fix --Creating a new entry
     FROM datasource2.engineering_dataset
 )
