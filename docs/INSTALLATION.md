@@ -25,5 +25,7 @@ cd mindsdb-ai-agent
 ```
 
 ### 2. Docker Do
+```
 docker pull mindsdb/mindsdb
 docker run -p 47334:47334 -p 47335:47335 mindsdb/mindsdb
+```
