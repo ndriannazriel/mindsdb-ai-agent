@@ -31,6 +31,7 @@ Get the AI agent up and running in a few simple steps:
     docker run -p 47334:47334 -p 47335:47335 mindsdb/mindsdb
     ```
 3.  **Mindsdb**: Follow [Reference1](Reference1.md) and [Reference2](Reference2.md)
+4.  **Python Integration**: Connect from a website or a local computer to the agent.
 
 For detailed setup instructions, including database connection specifics and API key management, please refer to the [INSTALLATION Guide](docs/INSTALLATION.md).
 

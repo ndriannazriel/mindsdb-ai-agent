@@ -46,3 +46,9 @@ docker run -p 47334:47334 -p 47335:47335 mindsdb/mindsdb
 * Enrich the data before passing to the LLM.
 * Get the LLM to generate new data based on the data to create new knowledge base.
 * Generate an AI agent that connects to this data as well as the data that we pulled from the website(Reference1).
+
+### 4. Connecting to the Agent from Python
+
+Let's say you want to query about the data remotely using python, here's a script that can help you with that.
+
+[main.py](../main.py)
